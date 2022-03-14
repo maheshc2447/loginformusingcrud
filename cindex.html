@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<HTML>
+    <head>
+        <title>
+            Company Details
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                        <label>company Name</label><label class="validation-error hide" id="cnameValidationError">This field is required.</label>
+                        <input type="text" name="cname" id="cname"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company Website</label>
+                             <input type="text" name="cweb" id="cweb"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company Phone Number</label>
+                             <input type="text" name="cphn" id="cphn"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company Address</label>
+                             <input type="text" name="cadd" id="cadd"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company City</label>
+                             <input type="text" name="ccity" id="ccity"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company State</label>
+                             <input type="text" name="cstate" id="cstate"/><br/>
+                        </div>
+
+                        <div>
+                            <label>company Country</label>
+                             <input type="text" name="ccountry" id="ccountry"/><br/>
+                        </div>
+
+                        <div>
+                            <label>Choose Industry List</label>
+                             <select name="ilist" id="ilist">
+                                <option value="ACCounts">Accounts</option>
+                                <option value="IT">IT</option>
+                                <option value="Sales">Sales</option>
+                                <option value="HC">Health Care</option>
+                            </select>
+                        </div>
+
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Add" />
+                    </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="companylist">
+                        <thead>
+                            <tr>
+                                <th>Company Name</th>
+                                <th>Company Website</th>
+                                <th>Company Phone Number</th>
+                                <th>Company City</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="script.js"></script>
+        <a href="index.html">Log Out</a>
+    </body>
+</HTML>
